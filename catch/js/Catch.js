@@ -42,7 +42,7 @@ function executeCommand(commandLine, outputDiv) {
 }
 // command Print
 function printCommand(args, outputDiv) {
-  const message = args.replace(/^"|"$/g, "); // remove surrounding quotes
+  const message = args.replace(/^"|"$/g, ''); // remove surrounding quotes
   const pre = document.createElement('pre');
   pre.textContent = message;
   outputDiv.appendChild(pre);
