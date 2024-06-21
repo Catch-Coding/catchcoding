@@ -1,4 +1,8 @@
-// commands.js
+/*
+cmdlist.js written by H3L
+*/
+
+/* DEPRECATED FILE!!!
 const commands = [
   { name: 'console.log(string)', description: 'Prints a message to the output.' },
   { name: 'number + number', description: 'Adds two numbers, and displays it inside the output.' },
@@ -19,3 +23,4 @@ function updateCommandList() {
     commandList.appendChild(li);
   });
 }
+*/
