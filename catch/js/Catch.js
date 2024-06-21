@@ -18,7 +18,8 @@ function runCode() {
     }
   };
   try {
-    const func = new Function('txt', `"use strict"; ${code}`);
+    const wrappedCode = "use strict"; ${code};
+    const func = new Function('txt', wrappedCode);
     const result = func(txt);
     
     // display result if return value exists
