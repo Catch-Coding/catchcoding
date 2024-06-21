@@ -37,7 +37,7 @@ function executeCommand(commandLine, outputDiv) {
       jsCommand(args, outputDiv);
       break;
     default:
-      outputError(Unknown: ${command}, outputDiv);
+      outputError(`Unknown: ${command}`, outputDiv);
   }
 }
 // command Print
@@ -52,7 +52,7 @@ function printCommand(args, outputDiv) {
 function addCommand(args, outputDiv) {
   const [num1, num2] = args.split('').map(n => parseFloat(n));
   if (isNaN(num1) || isNaN(num2)) {
-    outputError(Invalid numbers: ${args}, outputDiv);
+    outputError(`Invalid numbers: ${args}`, outputDiv);
     return;
   }
   const result = num1 + num2;
@@ -71,13 +71,13 @@ function jsCommand(args, outputDiv) {
       outputDiv.appendChild(pre);
     }
   } catch (error) {
-    outputError(Error executing JavaScript: ${error.message}, outputDiv);
+    outputError(`Error executing JavaScript: ${error.message}`, outputDiv);
   }
 }
 // error function
 function outputError(message, outputDiv) {
   const pre = document.createElement('pre');
   pre.style.color = 'red';
-  pre.textContent = Error: ${message};
+  pre.textContent = `Error: ${message`};
   outputDiv.appendChild(pre);
 }
