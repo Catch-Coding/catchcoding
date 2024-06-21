@@ -15,11 +15,16 @@
     </style>
   </head>
   <body>
+    <div id="cmdList">
+      <h3> Commands </h3>
+      <ul id="cmdListItems"></ul>
+    </div>
     <div class="menu-bar">
       <button onClick="runCode()">Run Code</button>
     </div>
     <textarea id="codeArea" placeholder="Write your Catch code here..."></textarea>
     <div id="output"></div>
+    <script src="./gui/cmdlist.js"></script>
     <script src="./vm/interpeter.js"></script>
   </body>
 </html>
