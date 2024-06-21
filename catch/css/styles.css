@@ -12,6 +12,7 @@ body {
   color: white;
   display: flex;
   justify-content: flex-start;
+  height: 3rem;
 }
 .menu-bar button {
   background-color: #8a7c8a;
