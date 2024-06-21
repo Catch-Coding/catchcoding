@@ -4,15 +4,11 @@ Written by H3LDLL in 2024 of June
 Licensed under GPL 3
 */
 
-//sleep
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+// Define your custom functions here
+function TestFunction() {
+    console.log("Test")
 }
-
-// sleep usage
-async function wait(args) {
-    await sleep(args);
-}
+// end of custom functions 
 
 function runCode() {
   const code = document.getElementById('codeArea').value;
