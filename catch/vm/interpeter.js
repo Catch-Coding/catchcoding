@@ -9,7 +9,7 @@ function TestFunction() {
     console.log("Test")
 }
 function addLog(num1, num2) {
-    ctch.log(num1, num2)
+    ctch.log(num1 + num2)
 }
 // end of Catch functions
 
