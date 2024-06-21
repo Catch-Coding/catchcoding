@@ -11,7 +11,7 @@ function sleep(ms) {
 
 // sleep usage
 async function wait(args) {
-    await sleep(i * args);
+    await sleep(args);
 }
 
 function runCode() {
