@@ -24,7 +24,7 @@ body {
 .menu-bar button:hover {
   background-color: #574e57;
 }
-.menu-bar p {
+.menu-bar img {
   color: white;
   padding: 10px;
 }
