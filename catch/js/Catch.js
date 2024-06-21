@@ -64,7 +64,7 @@ function addCommand(args, outputDiv) {
 // command JS
 function jsCommand(args, outputDiv) {
   try {
-    const result = new Function("use strict"; ${args})();
+    const result = new Function(`"use strict"; ${args}`)();
     if (result !== undefined) {
       const pre = document.createElement('pre')
       pre.textContent = result;
