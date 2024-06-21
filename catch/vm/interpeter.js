@@ -10,7 +10,7 @@ function sleep(ms) {
 }
 
 // sleep usage
-async function demo(args) {
+async function wait(args) {
     await sleep(i * args);
 }
 
