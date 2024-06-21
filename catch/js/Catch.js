@@ -19,13 +19,14 @@ function runCode() {
 }
 // function to execute a line
 function executeCommand(commandLine, outputDiv) {
-  // split the command into words
-  const words = commandLine.split('');
-
-  // determine the command and its args
-  const command = words[0];
-  const args = words.slice(1).join('');
-  
+  // use a regular expression to parse
+  const commandMatch = commandLine.match(/(\w+)\s*(.*)/);
+  if (!commandMatch) {
+    outputError(`Invalid Command: ${commandLine}`, outputDiv);
+    return;
+  }
+  const command = commandMatch[1];
+  const args = commandMatch[2];
   switch(command) {
     case 'print':
       printCommand(args, outputDiv);
