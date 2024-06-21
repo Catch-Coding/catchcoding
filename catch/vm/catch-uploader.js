@@ -3,7 +3,7 @@ catch-uploader.js
 written by H3L
 LICENSED UNDER GPL
 */
-function openProject {
+function openProject() {
   const fileInput = document.getElementById('fileInput');
   fileInput.click();
   fileInput.onchange = () => {
