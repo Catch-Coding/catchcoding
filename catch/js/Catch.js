@@ -18,7 +18,7 @@ function runCode() {
     }
   };
   try {
-    const wrappedCode = "use strict"; ${code};
+    const wrappedCode = `"use strict"; ${code}`;
     const func = new Function('txt', wrappedCode);
     const result = func(txt);
     
