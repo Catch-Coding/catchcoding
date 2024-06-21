@@ -13,6 +13,7 @@ function openProject() {
       reader.onload = function(e) {
         const content = e.target.result;
         document.getElementById('codeArea').value = content;
+        document.getElementById('projectTitleInput').value = file.name
       }
       reader.readAsText(file);
     }
