@@ -1,25 +1,26 @@
+/*
+CATCH.JS written by H3L/gvalue-04
+LICENSED UNDER THE GPL, READ THE LICENSE FILE FOR MORE INFORMATION.
+*/
+
 function runCode() {
   const code = document.getElementById('codeArea').value;
   const outputDiv = document.getElementById('output');
   outputDiv.innerHTML = "";
   outputDiv.style.color = 'black';
 
-  // custom console.log to capture the logging
-  const logs = [];
-  const customConsole = {
-    log: function(message) {
-      logs.push(message)
+  // custom catch object
+  const catchObject = {
+    print: function(message) {
+      const pre = document.createElement('pre');
+      pre.textContent = message;
+      outputDiv.appendChild(pre);
     }
   };
   try {
-    const func = new Function('console', `"use strict"; ${code}`);
-    const result = func(customConsole);
-    // append logs to the output
-    logs.forEach(log => {
-      const pre = document.createElement('pre');
-      pre.textContent = log;
-      outputDiv.appendChild(pre);
-    });
+    const func = new Function('catchObject', `"use strict"; ${code}`);
+    const result = func(catchObject);
+    
     // display result if return value exists
     if (result !== undefined) {
       const pre = document.createElement('pre');
