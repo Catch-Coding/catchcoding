@@ -14,7 +14,7 @@ function openProject() {
         const content = e.target.result;
         document.getElementById('codeArea').value = content;
       }
-      reader.readAsText(file;
+      reader.readAsText(file);
     }
   };
 }
