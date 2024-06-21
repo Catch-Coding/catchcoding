@@ -4,11 +4,14 @@ Written by H3LDLL in 2024 of June
 Licensed under GPL 3
 */
 
-// Define your custom functions here
+// Define Catch functions here
 function TestFunction() {
     console.log("Test")
 }
-// end of custom functions 
+function addLog(num1, num2) {
+    ctch.log(num1, num2)
+}
+// end of Catch functions
 
 function runCode() {
   const code = document.getElementById('codeArea').value;
