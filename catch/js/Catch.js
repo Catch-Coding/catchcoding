@@ -14,7 +14,7 @@ function runCode() {
   // split the code into lines and execute each line
   const lines = code.split('');
   lines.forEach(line => {
-    executeCommand(line.trim(), outputDiv');
+    executeCommand(line.trim(), outputDiv);
   });
 }
 // function to execute a line
