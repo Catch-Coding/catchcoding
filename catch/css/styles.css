@@ -39,4 +39,12 @@ textarea {
   border-top: 1px solid #ccc;
   overflow-y: auto;
 }
+#cmdList {
+  width: 200px;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
   
