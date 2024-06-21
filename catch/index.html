@@ -18,11 +18,15 @@
     
     <div class="menu-bar">
       <img src="./css/catch-logo.png">
+      <button onClick="saveProject()">Save...</button>
       <button onClick="runCode()">Run Code</button>
     </div>
     <textarea id="codeArea" placeholder="Write your Catch code here..." spellcheck="false"></textarea>
     <div id="output"></div>
+    <!-- SCRIPTS START HERE! -->
+    <script src="./vm/catch-downloader.js"></script>
     <script src="./gui/cmdlist.js"></script>
     <script src="./vm/interpeter.js"></script>
+    <!-- SCRIPTS END HERE! -->
   </body>
 </html>
