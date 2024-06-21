@@ -3,7 +3,16 @@ Catch! Interpreter
 Written by H3LDLL in 2024 of June
 Licensed under GPL 3
 */
-// script.js
+
+//sleep
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// sleep usage
+async function demo(args) {
+    await sleep(i * args);
+}
 
 function runCode() {
   const code = document.getElementById('codeArea').value;
