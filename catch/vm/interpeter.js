@@ -28,7 +28,7 @@ function runCode() {
 
   try {
     // Override console.log
-    const func = new Function('console', `"use strict"; ${code}`);
+    const func = new Function('ctch', `"use strict"; ${code}`);
     const result = func(customConsole);
 
     // Append logs to the outputDiv
