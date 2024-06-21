@@ -23,6 +23,10 @@ body {
 .menu-bar button:hover {
   background-color: #574e57;
 }
+.menu-bar p {
+  color: white;
+  padding: 10px;
+}
 textarea {
   flex: 1;
   padding: 10px;
