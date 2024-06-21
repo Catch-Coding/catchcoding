@@ -78,6 +78,6 @@ function jsCommand(args, outputDiv) {
 function outputError(message, outputDiv) {
   const pre = document.createElement('pre');
   pre.style.color = 'red';
-  pre.textContent = `Error: ${message`};
+  pre.textContent = `Error: ${message}`;
   outputDiv.appendChild(pre);
 }
