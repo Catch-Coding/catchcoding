@@ -10,7 +10,7 @@ function runCode() {
   outputDiv.style.color = 'black';
 
   // custom catch object
-  const ctchObject = {
+  const txt = {
     print: function(message) {
       const pre = document.createElement('pre');
       pre.textContent = message;
@@ -18,8 +18,8 @@ function runCode() {
     }
   };
   try {
-    const func = new Function('ctchObject', `"use strict"; ${code}`);
-    const result = func(ctchObject);
+    const func = new Function('txt', `"use strict"; ${code}`);
+    const result = func(txt);
     
     // display result if return value exists
     if (result !== undefined) {
