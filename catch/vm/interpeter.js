@@ -25,7 +25,7 @@ function runCode() {
   // Custom console.log to capture outputs
   const logs = [];
   const customConsole = {
-    log: function(message) {
+    print: function(message) {
       logs.push(message);
     }
   };
