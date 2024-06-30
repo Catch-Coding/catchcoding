@@ -41,6 +41,8 @@ body {
   color: white;
   padding: 10px;
   margin: 6px;
+  height: 100px;
+  width: 100px;
 }
 textarea {
   flex: 1;
