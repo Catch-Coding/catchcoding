@@ -19,6 +19,7 @@ body {
 .menu-bar button {
   background-color: #8a7c8a;
   border: 1px dashed #8a7c8a;
+  margin: 6px;
   border-radius: 12px;
   color: white;
   padding: 10px;
@@ -27,6 +28,7 @@ body {
 .menu-bar .input {
   background-color: #8a7c8a;
   border: 1px dashed #8a7c8a;
+  margin: 6px;
   border-radius: 12px;
   color: white;
   padding: 10px;
@@ -38,6 +40,7 @@ body {
 .menu-bar img {
   color: white;
   padding: 10px;
+  margin: 6px;
 }
 textarea {
   flex: 1;
