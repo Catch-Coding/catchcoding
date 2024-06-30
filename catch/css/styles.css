@@ -9,6 +9,8 @@ body {
 .menu-bar {
   background-color: #756A75;
   padding: 10px;
+  border: 1px dashed #8a7c8a;
+  border-radius: 12px;
   color: white;
   display: flex;
   justify-content: flex-start;
@@ -16,14 +18,16 @@ body {
 }
 .menu-bar button {
   background-color: #8a7c8a;
-  border: none;
+  border: 1px dashed #8a7c8a;
+  border-radius: 12px;
   color: white;
   padding: 10px;
   cursor: pointer;
 }
 .menu-bar .input {
   background-color: #8a7c8a;
-  border: none;
+  border: 1px dashed #8a7c8a;
+  border-radius: 12px;
   color: white;
   padding: 10px;
   cursor: pointer;
